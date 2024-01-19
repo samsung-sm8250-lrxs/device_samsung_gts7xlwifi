@@ -14,3 +14,7 @@
 # limitations under the License.
 
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.gts7xlwifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.gts7xlwifi.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
