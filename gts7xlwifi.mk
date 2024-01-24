@@ -17,6 +17,9 @@
 $(call inherit-product, device/samsung/sm8250-common/hentai_common.mk)
 $(call inherit-product, device/samsung/gts7xlwifi/device.mk)
 
+# Inherit proprietary blobs
+$(call inherit-product, vendor/samsung/gts7xlwifi/gts7xlwifi-vendor.mk)
+
 PRODUCT_NAME := gts7xlwifi
 PRODUCT_DEVICE := gts7xlwifi
 PRODUCT_MODEL := Galaxy Tab S7+
