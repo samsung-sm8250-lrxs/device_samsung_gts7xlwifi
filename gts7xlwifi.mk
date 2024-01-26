@@ -15,6 +15,7 @@
 #
 
 $(call inherit-product, device/samsung/sm8250-common/hentai_common.mk)
+$(call inherit-product, device/samsung/sm8250-common/device-common.mk)
 $(call inherit-product, device/samsung/gts7xlwifi/device.mk)
 
 # Inherit proprietary blobs
