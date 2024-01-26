@@ -13,6 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_cdp.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_qrd.xml:$(TARGET_COPT_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
