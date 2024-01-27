@@ -19,6 +19,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qrd.xml:$(TARGET_COPT_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
+# Kernel (Prebuilt)
+include device/samsung/gts7xlwifi-kernel/prebuilt-kernel.mk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

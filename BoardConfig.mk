@@ -18,6 +18,9 @@ DEVICE_PATH := device/samsung/gts7xlwifi
 # Display
 TARGET_SCREEN_DENSITY := 340
 
+# Kernel (Prebuilt)
+include device/samsung/gts7xlwifi-kernel/BoardConfig-PrebuiltKernel.mk
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_SUPER_PARTITION_SIZE := 10171187200
