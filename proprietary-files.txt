@@ -64,7 +64,6 @@ vendor/lib64/camera/com.samsung.sensor.s5k3m5.so
 vendor/lib64/camera/com.samsung.sensor.imx616.so
 vendor/lib64/camera/uw_dual_calibration.bin
 vendor/lib64/camera/com.samsung.sensor.imx516.so
-vendor/lib64/camera/components
 vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib64/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib64/camera/components/com.samsung.node.multi_frame_video_hdr.so
@@ -191,7 +190,6 @@ vendor/lib/camera/ois_mcu_stm32g_fw.bin
 vendor/lib/camera/com.samsung.sensor.s5k3m5.so
 vendor/lib/camera/com.samsung.sensor.imx616.so
 vendor/lib/camera/com.samsung.sensor.imx516.so
-vendor/lib/camera/components
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib/camera/components/com.samsung.node.multi_frame_video_hdr.so

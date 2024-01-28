@@ -38,6 +38,7 @@
 system	/system	ext4	ro	wait,avb=vbmeta,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 system	/system	f2fs	ro	wait,avb=vbmeta,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 system	/system	erofs	ro	wait,avb=vbmeta,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system_ext	/system_ext	ext4	ro	wait,avb,logical,first_stage_mount
 product	/product	ext4	ro	wait,avb,logical,first_stage_mount
 vendor	/vendor	ext4	ro	wait,avb,logical,first_stage_mount
 odm	/odm	ext4	ro	wait,avb,logical,first_stage_mount
@@ -61,6 +62,9 @@ odm	/odm	ext4	ro	wait,avb,logical,first_stage_mount
 # VOLD:samsung/common/fstab.samsung
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   auto    auto    defaults    voldmanaged=usb:auto
 /devices/platform/soc/8804000.sdhci/mmc_host*           auto    vfat    defaults    voldmanaged=sdcard:auto
+
+# Boot Image
+/dev/block/bootdevice/by-name/boot                      /boot                 emmc     defaults                                                                                               defaults
 
 # Samsung ODE
 /dev/block/bootdevice/by-name/keydata	/keydata	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,inlinecrypt	wait,check

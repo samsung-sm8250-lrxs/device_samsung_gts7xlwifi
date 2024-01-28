@@ -1,2 +1,5 @@
 soong_namespace {
+    imports: [
+        "vendor/samsung/gts7xlwifi",
+    ],
 }
