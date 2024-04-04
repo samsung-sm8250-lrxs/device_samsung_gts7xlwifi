@@ -20,7 +20,7 @@ TARGET_SCREEN_DENSITY := 340
 
 # Kernel (Prebuilt)
 $(shell mkdir -p $(PRODUCT_OUT)/obj/KERNEL_OBJ/usr)
-include device/samsung/gts7xlwifi-kernel/BoardConfig-PrebuiltKernel.mk
+include device/samsung/sm8250-kernel/BoardConfigKernel.mk
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144

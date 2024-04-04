@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
 
 # Kernel (Prebuilt)
-include device/samsung/gts7xlwifi-kernel/prebuilt-kernel.mk
+include device/samsung/sm8250-kernel/device-kernel.mk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -43,4 +43,4 @@ PRODUCT_COPY_FILES += \
 
 # Recovery Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.usb.rc:root/init.recovery.usb.rc
+    $(LOCAL_PATH)/recovery/init.recovery.usb.rc:root/init.recovery.usb.rc
